@@ -1,2 +1,16 @@
 # Coding-for-Artists-Creative-Programming-Course-with-LlaMa
 This project, as the first course that facilitates creative programming for artists, utilizes and promotes the use of LlaMa in artistic creation. We target the general public with artistic or non-professional programming backgrounds, building an online community that boosts the collaboration between art and technology. 
+
+##Background
+In an era where Artificial Intelligence (AI) and Generative Content (AIGC) tools are rapidly reshaping the creative landscape, artists find themselves at a crossroads. The allure of AI's capabilities is undeniable, yet the fear of technology overshadowing human creativity looms large. This dichotomy was the central theme of the "Creative Programming for Artists" course held on July 11 2024. The course aimed to bridge the gap between art and technology, empowering artists to harness AI tools like LlaMa to enhance their creative processes rather than hinder them.
+
+The question that exists long is whether technology inevitably and severely tarnishes human creativity - what should the future of arts be like? Rather than diminishing self-creativity, how should artists work with technological advancement? How can artists with human creativity that cannot be easily replaced by machines use technology instead of rebelling against it?
+
+##What to Gain from the Course?
+Through creative programming using big language models, artists can gain creative inspiration. Based on the theme or idea provided by the artists, LLMs can generate a series of related concepts and sub-themes for inspiration. Besides, LLMs are able to understand the needs of artists and generate relevant code snippets or programs directly from the ideas and concepts they provide. For generated or user-modified, LLMs can check and fix syntax errors. The advent of LLMs can also provide a more in-depth code explanation, of which adds clear, detailed comments to the generated code. This is more friendly to artists with non-professional programming backgrounds. In the process of generating creative programming code using the Big Language Model, the artist can focus on the effect of the code implementation rather than the technical details and thus can engage in a process of reflection on the artistic effect achieved by the current code, further iterating and refining the idea. Overall, our course targets to allow students/learners/artists:
+- To understand the nature of large language modelling from a grounded theory perspective;
+- To learn how to utilize the Big Language Model more scientifically for creative programming artwork;
+- To ascertain how to critically engage in the human-AI interaction process.
+
+The goal of this course is to provide students, especially those with artistic backgrounds, with the awareness and ability to proactively utilize state-of-the-art artificial intelligence tools to assist them in accomplishing their work. Above all, we would like to open up the platform to all in the art sector / interested in creative art, to join our online community. We target to provide a platform that allows the public to visit and learn how to start with creative programming, promoting the coexistence and integration of art and technology.
+
