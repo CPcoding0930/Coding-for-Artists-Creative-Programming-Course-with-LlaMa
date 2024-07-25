@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg936\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 let angle;\
+let lenSlider;\
+let maxLevel;\
+let colors;\
+\
+function setup() \{\
+  createCanvas(800, 800);\
+  angleMode(DEGREES);\
+  colors = [color(255, 255, 0), color(0, 255, 0)]; // \uc0\u40644 \u33394 \u21644 \u32511 \u33394 \
+  lenSlider = createSlider(50, 300, 150, 1); // \uc0\u20998 \u25903 \u38271 \u24230 \u28369 \u21160 \u26465 \
+\}\
+\
+function draw() \{\
+  background(255);\
+  translate(width / 2, height / 2);\
+  angle = map(sin(frameCount * 0.5), -1, 1, 0, 60); // \uc0\u21160 \u24577 \u35282 \u24230 \u21464 \u21270 \
+  strokeWeight(2);\
+  let len = lenSlider.value();\
+  maxLevel = map(len, 50, 300, 7, 3); // \uc0\u26681 \u25454 \u20998 \u25903 \u38271 \u24230 \u21160 \u24577 \u35843 \u25972 \u20998 \u24418 \u23618 \u27425 \
+  fractal(len, maxLevel, colors[0], colors[1]);\
+\}\
+\
+function fractal(len, level, startCol, endCol) \{\
+  if (level == 0) \{\
+    return;\
+  \}\
+\
+  let col = lerpColor(startCol, endCol, map(len, 200, 0, 0, 1)); // \uc0\u39068 \u33394 \u28176 \u21464 \
+\
+  for (let i = 0; i < 6; i++) \{\
+    push();\
+    rotate(i * 60 + angle);\
+    branch(len, level, col, startCol, endCol);\
+    pop();\
+  \}\
+\}\
+\
+function branch(len, level, col, startCol, endCol) \{\
+  stroke(col);\
+  line(0, 0, 0, -len);\
+  translate(0, -len);\
+  len *= 0.5;\
+\
+  if (level > 1) \{\
+    for (let i = -1; i <= 1; i += 2) \{\
+      push();\
+      rotate(i * angle / 2); // \uc0\u22686 \u21152 \u26059 \u36716 \u35282 \u24230 \
+      branch(len, level - 1, lerpColor(col, endCol, 0.5), startCol, endCol);\
+      pop();\
+    \}\
+  \}\
+\}\
+}
